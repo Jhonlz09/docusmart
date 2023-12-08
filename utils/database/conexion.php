@@ -5,7 +5,7 @@ class Conexion {
         $host = "localhost";
         $dbname = "dbsilabosoft";
         $username = "root"; // Cambia esto con tu nombre de usuario MySQL
-        $password = ""; // Cambia esto con tu contraseña MySQL
+        $password = "Celeste09022001_"; // Cambia esto con tu contraseña MySQL
         $port = "3306"; // Puerto predeterminado de MySQL
         $opciones = array(
             PDO::ATTR_EMULATE_PREPARES => false,
