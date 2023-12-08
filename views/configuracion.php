@@ -188,9 +188,9 @@
                     });
                   //  location.reload()
 
-                    // setTimeout(function() {
-                    //     location.reload(true); // El parámetro true forzará la recarga desde el servidor, no desde la caché del navegador
-                    // }, 2000);
+                     setTimeout(function() {
+                        location.reload(true); // El parámetro true forzará la recarga desde el servidor, no desde la caché del navegador
+                    }, 1500);
                 },
             });
         });
