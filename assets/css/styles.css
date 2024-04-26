@@ -1,0 +1,370 @@
+/* Variables 
+:root {
+    --rojoPrimario: rgba(254, 72, 72, 1);
+    --rojoSecundario: rgba(168, 6, 6, 1);
+    --blanco: #fff;
+    --negro: #000;
+    --bgFooter: #302c2c;
+    --enlaceFooter: #1966d8;
+}
+*/
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+th,
+td {
+    text-align: center !important;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+footer a,
+footer span,
+footer p {
+    padding: 1rem 0 .5rem 0;
+}
+
+footer a,
+footer span {
+    display: inline-block;
+    color: #1966d8;
+}
+
+footer p {
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+fieldset{
+    border: none;
+    width: 100%;
+}
+
+legend{
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+
+
+/* backgrounds */
+.bg-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #302c2c;
+}
+
+.bg-login {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-header {
+    z-index: 9000;
+    width: 100%;
+    top: 0;
+    background: rgb(254, 72, 72);
+    background: linear-gradient(180deg, rgba(254, 72, 72, 1) 0%, rgba(168, 6, 6, 1) 100%);
+}
+
+.header-login{
+    position: fixed;
+}
+
+/* utilidaddes */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 110rem;
+}
+
+.container--tabla{
+    overflow-x: auto;
+}
+
+.btn {
+    display: inline-block;
+    width: 90%;
+    max-width: 18rem;
+    margin: 0 auto;
+    background-color: rgba(254, 72, 72, 1);
+    border: 1px solid rgba(168, 6, 6, 1);
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem 5rem;
+    transition: background-color .5s;
+}
+
+.btn:hover {
+    background-color: rgba(227, 31, 31, 0.919);
+}
+
+.btn--regresar {
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: unset;
+    z-index: 10000;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.txt-center {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*********************************************************************************
+
+                            Pantalla: Login
+
+**********************************************************************************/
+.bg-formulario {
+    width: 80%;
+    max-width: 40rem;
+    border-radius: 15px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.formulario__fieldset{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input-contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-contenedor > input{
+    width: 90%;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.button--login{
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    /* text-transform: uppercase;
+    letter-spacing: 2px; */
+    width: 100%;
+}
+
+/*********************************************************************************
+
+                            Pantalla: Menu Principal
+
+**********************************************************************************/
+.menuPrincipal__grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 13rem;
+}
+
+.card{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-img{
+    width: 90% !important;
+    margin: auto;
+}
+
+.card-body{
+    background-color: rgba(254, 72, 72, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 7rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.card_titulo{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Galaxy Fold */
+@media (min-width: 300px) {
+    .menuPrincipal__grid {
+        margin-bottom: 10rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .menuPrincipal{
+        position: relative;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .menuPrincipal__grid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 780px) {
+    .menuPrincipal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuPrincipal__grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        align-content: center;
+    }
+
+    .card{
+        height: 35rem;
+        max-width: 35rem;
+    }
+}
+
+
+/*********************************************************************************
+
+                            Pantalla: Consulta Docente
+
+**********************************************************************************/
+.form {
+    margin: 4rem auto;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.formDiv {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formDiv__label {
+    flex: 0 0 calc(20% - 1rem)
+}
+
+.formDiv__select {
+    padding: .5rem;
+    flex: 0 0 calc(80% - 1rem)
+}
+
+.table {
+    margin-bottom: 10rem;
+}
+
+input#btn-Inicio{
+    color: #FFF;
+    background-color: rgb(227 31 31);
+    box-shadow: 0 5px 0 rgb(168 6 6);
+    border-radius: 2rem;
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    border-color: transparent;
+    position: relative;
+    top: 0;
+    transition: all .25s ease-in-out;
+    font-size: 14px;
+    font-weight: bold;
+}
+#btn-Inicio:hover{
+  color: #f7f7f7;
+    background-color: rgb(227 31 31);
+    top: 3px;
+    box-shadow: 0 2px 0 rgb(168 6 6);
+}
+
